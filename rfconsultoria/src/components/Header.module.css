@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  height: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 7px 7px #23364a77;
+  padding: 0 1rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  max-height: 100%;
+}
+
+.text {
+  font-weight: var(--fw-superbold);
+  color: var(--clr-primary);
+  font-size: 18px;
+}
