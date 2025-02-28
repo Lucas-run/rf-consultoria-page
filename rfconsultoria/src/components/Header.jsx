@@ -7,7 +7,7 @@ export default function Header() {
       <div className={styles.logoContainer}>
         <img
           className={styles.logo}
-          src="../public/logo-edited.svg"
+          src="../public/logo-img.png"
           alt="logo do site"
         />
         <div className={styles.text}>RF Consultoria</div>
