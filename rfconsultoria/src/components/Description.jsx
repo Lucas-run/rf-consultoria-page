@@ -1,8 +1,9 @@
+import CtaButton from "./CtaButton";
 import styles from "./Description.module.css";
 
 export default function Description() {
   return (
-    <div>
+    <div id="description">
       <div className={styles.title}>
         O Que é <span>consultoria</span> Acadêmica?
       </div>
@@ -24,7 +25,7 @@ export default function Description() {
           tempo e garantindo a qualidade que seus projetos merecem.
         </p>
       </div>
-      <div className={styles.cta}>Saiba mais</div>
+      <CtaButton text="Saiba Mais" />
     </div>
   );
 }

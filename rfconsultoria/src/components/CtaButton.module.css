@@ -1,0 +1,11 @@
+.cta {
+  background-color: var(--clr-secondary);
+  font-size: 1rem;
+  color: var(--clr-neutral);
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  width: 45vw;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
