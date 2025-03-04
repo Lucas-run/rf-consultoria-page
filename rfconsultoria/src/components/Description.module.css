@@ -29,3 +29,10 @@
   margin: 0 auto;
   margin-bottom: 2.5rem;
 }
+
+@media (min-width: 768px) {
+  .content p {
+    text-align: justify;
+    padding: 0 3rem;
+  }
+}
