@@ -84,3 +84,28 @@
   border-bottom: 1px solid var(--clr-primary);
   text-align: center;
 }
+
+@media (min-width: 1152px) {
+  .menuButton {
+    width: auto;
+    height: auto;
+  }
+  .desktopHidden {
+    display: none;
+  }
+  .lista.desktopLista {
+    pointer-events: all;
+    position: static;
+    flex-direction: row;
+    opacity: 1;
+    height: auto;
+    transform: none;
+  }
+
+  .item {
+    font-size: 1rem;
+    border: none;
+    padding: 0;
+    text-align: initial;
+  }
+}

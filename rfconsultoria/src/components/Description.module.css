@@ -1,5 +1,5 @@
 .title {
-  font-size: 40px;
+  font-size: var(--fs-title);
   font-weight: var(--fw-bold);
   margin: 2.5rem 0;
   text-align: center;
@@ -10,7 +10,7 @@
 }
 
 .content {
-  font-size: 1rem;
+  font-size: var(--fs-content);
   text-align: center;
 }
 

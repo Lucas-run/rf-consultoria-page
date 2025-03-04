@@ -3,6 +3,9 @@
 :root {
   --ff-primary: "Merriweather", serif;
 
+  --fs-title: 40px;
+  --fs-content: 1rem;
+
   --fw-light: 300;
   --fw-regular: 400;
   --fw-bold: 700;
@@ -68,4 +71,11 @@ a {
 .container {
   padding: 0 5vw;
   margin-top: 6.75rem;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-title: 54px;
+    --fs-content: 1.125rem;
+  }
 }

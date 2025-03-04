@@ -12,9 +12,15 @@ export default function Menu() {
     <div className={styles.menuButton}>
       <button
         onClick={handleClick}
-        className={isHidden ? styles.hamburger : styles.back}
+        className={`${isHidden ? styles.hamburger : styles.back} ${
+          styles.desktopHidden
+        }`}
       ></button>
-      <ul className={`${isHidden ? styles.hidden : ""} ${styles.lista}`}>
+      <ul
+        className={`${isHidden ? styles.hidden : ""} ${styles.lista} ${
+          styles.desktopLista
+        }`}
+      >
         <li className={styles.item}>
           <a href="#hero" onClick={handleClick}>
             Início

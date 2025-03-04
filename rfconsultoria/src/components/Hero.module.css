@@ -3,7 +3,7 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: var(--fs-title);
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -20,4 +20,10 @@
   border-radius: 50% 30% / 42% 40%;
   background-color: #ebb04677;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 64px;
+  }
 }

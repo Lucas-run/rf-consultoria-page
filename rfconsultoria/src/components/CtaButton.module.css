@@ -1,6 +1,6 @@
 .cta {
   background-color: var(--clr-secondary);
-  font-size: 1rem;
+  font-size: var(--fs-content);
   color: var(--clr-neutral);
   border-radius: 8px;
   text-align: center;
