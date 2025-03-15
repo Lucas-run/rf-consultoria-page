@@ -10,7 +10,7 @@ export default function Hero() {
       </h1>
       <CtaButton text="Conheça nosso trabalho" />
       <div className={styles.avatar}>
-        <img src={heroImg} alt="" />
+        <img src={heroImg} alt="Ilustração de uma estudante lendo um livro" />
       </div>
     </div>
   );

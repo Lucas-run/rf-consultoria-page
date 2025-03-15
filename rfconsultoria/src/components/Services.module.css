@@ -3,6 +3,7 @@
   font-weight: var(--fw-bold);
   margin: 2.5rem 0;
   text-align: center;
+  padding-top: 5rem;
 }
 
 .title span {

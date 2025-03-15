@@ -1,8 +1,15 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .title {
   font-size: var(--fs-title);
   font-weight: var(--fw-bold);
   margin: 2.5rem 0;
   text-align: center;
+  padding-top: 5rem;
 }
 
 .title span {
@@ -15,7 +22,7 @@
 }
 
 .content p {
-  margin: 2rem 0;
+  margin: 4rem 0;
 }
 
 .cta {

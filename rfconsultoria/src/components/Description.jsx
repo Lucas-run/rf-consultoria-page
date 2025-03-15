@@ -3,7 +3,7 @@ import styles from "./Description.module.css";
 
 export default function Description() {
   return (
-    <div id="description">
+    <div id="description" className={styles.description}>
       <div className={styles.title}>
         O Que é <span>consultoria</span> Acadêmica?
       </div>
@@ -11,10 +11,10 @@ export default function Description() {
         <p>
           A consultoria acadêmica é um serviço especializado que apoia
           estudantes e profissionais na produção e aprimoramento de textos
-          acadêmicos. Nosso trabalho envolve a análise detalhada e revisão de
-          conteúdos, sugestões de melhorias metodológicas e a formatação
-          adequada de trabalhos, seguindo as normas exigidas por instituições de
-          ensino.
+          acadêmicos, como TCC ou artigos cietíficos. Nosso trabalho envolve a
+          análise detalhada e revisão de conteúdos, sugestões de melhorias
+          metodológicas e a formatação adequada de trabalhos, seguindo as normas
+          exigidas por instituições de ensino.
         </p>
         <p>
           Pensada para quem enfrenta o desafio de conciliar trabalho, estudos e

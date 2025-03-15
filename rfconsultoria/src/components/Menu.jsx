@@ -1,10 +1,17 @@
 import { useState } from "react";
 import styles from "./Menu.module.css";
+import { Link, useNavigate } from "react-router";
 
 export default function Menu() {
   const [isHidden, setIsHidden] = useState(true);
+  const navigate = useNavigate();
 
   function handleClick() {
+    setIsHidden(!isHidden);
+    navigate("/rf-consultoria-page/");
+  }
+
+  function handleClickPage() {
     setIsHidden(!isHidden);
   }
 
@@ -26,6 +33,7 @@ export default function Menu() {
             Início
           </a>
         </li>
+
         <li className={styles.item}>
           <a href="#description" onClick={handleClick}>
             O que é?
@@ -35,6 +43,11 @@ export default function Menu() {
           <a href="#services" onClick={handleClick}>
             Nossos serviços
           </a>
+        </li>
+        <li className={styles.item}>
+          <Link to="/rf-consultoria-page/form" onClick={handleClickPage}>
+            Entre em contato
+          </Link>
         </li>
       </ul>
     </div>
