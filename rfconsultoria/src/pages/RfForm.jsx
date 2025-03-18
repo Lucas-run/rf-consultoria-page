@@ -10,6 +10,7 @@ export default function RfForm() {
     email: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,13 +20,24 @@ export default function RfForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Aqui você pode enviar os dados (ex.: para um backend ou e-mail)
-    console.log("Dados do formulário:", formData);
-    setSubmitted(true);
-    // Resetar formulário (opcional)
-    setFormData({ name: "", description: "", whatsapp: "", email: "" });
+
+    try {
+      const response = await fetch("http://localhost:5000/api/leads", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) throw new Error("Erro ao enviar formulário");
+      setSubmitted(true);
+      setError(null);
+    } catch (err) {
+      setError("Houve um problema. Tente novamente mais tarde.");
+      console.error(err);
+    }
   };
 
   return (
@@ -41,7 +53,7 @@ export default function RfForm() {
           <h1 className={styles.title}>
             Peça Ajuda e Receba Nosso Guia Grátis!
           </h1>
-
+          {error && <p className={styles.error}>{error}</p>}
           <label className={styles.label}>
             Nome*:
             <input
