@@ -24,7 +24,8 @@ export default function RfForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/api/leads", {
+      console.log("Enviando formulário:", formData);
+      const response = await fetch("https://rfleadsapi.vercel.app/api/leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
