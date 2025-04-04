@@ -25,14 +25,14 @@ export default function RfForm() {
 
     try {
       console.log("Enviando formulário:", formData);
-      const response = await fetch("https://rfleadsapi.vercel.app/api/leads", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      if (!response.ok) throw new Error("Erro ao enviar formulário");
+      // const response = await fetch("https://rfleadsapi.vercel.app/api/leads", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify(formData),
+      // });
+      // if (!response.ok) throw new Error("Erro ao enviar formulário");
       setSubmitted(true);
       setError(null);
     } catch (err) {
@@ -68,7 +68,7 @@ export default function RfForm() {
           </label>
 
           <label className={styles.label}>
-            Descrição da necessidade (opcional):
+            Descrição da necessidade:
             <textarea
               name="description"
               value={formData.description}
@@ -79,7 +79,7 @@ export default function RfForm() {
           </label>
 
           <label className={styles.label}>
-            WhatsApp (opcional):
+            WhatsApp:
             <input
               type="tel"
               name="whatsapp"

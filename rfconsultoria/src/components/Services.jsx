@@ -9,7 +9,7 @@ export default function Services() {
         <div className={styles.service}>
           <div className={styles.number}>01</div>
           <div>
-            <div className={styles.serviceTitle}>Correções Ortográficas</div>
+            <div className={styles.serviceTitle}>Revisão</div>
             <div className={styles.serviceText}>
               Revisão detalhada para eliminar erros de gramática, ortografia e
               coesão, garantindo um texto claro e profissional.

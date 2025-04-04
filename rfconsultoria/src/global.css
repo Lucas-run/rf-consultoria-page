@@ -73,6 +73,12 @@ a {
   margin-top: 6.75rem;
 }
 
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
   :root {
     --fs-title: 54px;
