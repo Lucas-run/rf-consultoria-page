@@ -49,6 +49,11 @@ export default function Menu() {
             Entre em contato
           </Link>
         </li>
+        <li className={styles.item}>
+          <Link to="/rf-consultoria-page/blog" onClick={handleClickPage}>
+            Blog
+          </Link>
+        </li>
       </ul>
     </div>
   );
